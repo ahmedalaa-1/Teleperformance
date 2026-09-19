@@ -84,7 +84,7 @@ The data was prepared and structured for analysis by:
 
 # 🧩 Data Model
 
-![Data Model](data model/Data model.png)
+![Data Model](<data model/Data model.png>)
 
 ### Model Overview
 

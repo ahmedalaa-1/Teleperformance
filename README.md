@@ -84,11 +84,23 @@ The data was prepared and structured for analysis by:
 
 # 🧩 Data Model
 
-![Data Model](images/data-model.png)
+![Data Model](data model/Data model.png)
 
 ### Model Overview
 
-[Add a short explanation of the data model here.]
+[This is a star-schema model with two fact tables — **AHT Data**
+(handling time, wrap time, chat volume) and **Survey Data**
+(CSAT, star ratings, Helped Resolve Rate) — connected through
+shared dimension tables:
+
+- **Month** — date table linking both fact tables for monthly trends
+- **Consult_Outcome** — links both fact tables by Issue Code, enabling
+  cross-analysis between handling efficiency and satisfaction
+- **Hire Dates** — agent lookup table, linked to AHT Data via Agent
+
+Because both fact tables share `Month` and `Consult_Outcome`, the
+model supports comparing AHT and CSAT side by side for the same
+consult outcome or time period.]
 
 The model connects customer survey data with consultation outcomes,
 agent information, and performance metrics to support cross-analysis.
@@ -106,7 +118,7 @@ The dashboard consists of **2 analytical pages**:
 
 # 📄 Page 1 — Executive Overview
 
-![Executive Overview](images/page-1.png)
+![Executive Overview](Dashboard/Executive Overview.png)
 
 ### Purpose
 
@@ -144,7 +156,7 @@ performance and tracks the main KPIs against their targets.
 
 # 📄 Page 2 — Consult Outcome Analysis
 
-![Consult Outcome Analysis](images/page-2.png)
+![Consult Outcome Analysis](Dashboard/Consult Outcome Analysis.png)
 
 ### Purpose
 
@@ -313,14 +325,11 @@ Based on the analysis, areas for further investigation include:
 📦 Teleperformance-Customer-Support-Analytics
 │
 ├── 📂 Dashboard
-│   └── Teleperformance Dashboard.xlsx
+│   └── Teleperformance Dashboard pages
 │
 ├── 📂 Dataset
 │   └── dataset.xlsx
 │
 ├── 📂 Images
 │   ├── data-model.png
-│   ├── page-1.png
-│   └── page-2.png
-│
 └── 📜 README.md

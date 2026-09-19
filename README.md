@@ -118,7 +118,7 @@ The dashboard consists of **2 analytical pages**:
 
 # 📄 Page 1 — Executive Overview
 
-![Executive Overview](Dashboard/Executive Overview.png)
+![Executive Overview](<Dashboard/Executive Overview.png>)
 
 ### Purpose
 
@@ -156,7 +156,7 @@ performance and tracks the main KPIs against their targets.
 
 # 📄 Page 2 — Consult Outcome Analysis
 
-![Consult Outcome Analysis](Dashboard/Consult Outcome Analysis.png)
+![Consult Outcome Analysis](<Dashboard/Consult Outcome Analysis.png>)
 
 ### Purpose
 
